@@ -1,0 +1,352 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d7f7d3e93f.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="assets/styles.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <!--==============Navbar================-->
+
+    <header>
+        <nav class=" navbar navbar-expand-lg fixed-top">
+            <!--container-fluid-->
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">
+                    <span class="logo d-none d-sm-inline">
+                        <img src="ASSETS/IMG/APLogo-20-20 (2).png" alt="" height="40">
+                    </span>
+                </a>
+                <div class="containersocial">
+                    <span class="logo d-none d-sm-inline">
+                        <a href="https://www.instagram.com/barbara_olguin/" target="_blank"><i
+                                class="fa-brands fa-instagram fa-2xl"></i></a>
+                        <a href="https://www.linkedin.com/in/b%C3%A1rbara-olgu%C3%ADn-63635824a/" target="_blank"><i
+                                class="fa-brands fa-linkedin fa-2xl"></i></a>
+                        <a href="https://github.com/olgbar" target="_blank"><i
+                                class="fa-brands fa-github fa-2xl"></i></a>
+                        <!-- Button trigger modal -->
+                        <a href="/login.html"><i class="fa-solid fa-user-lock fa-2xl">
+                            </i>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3 row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control-plaintext text" id="staticEmail"
+                                value="email@ejemplo.com">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">Contraseña</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-custom">Iniciar Sesion</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--==============Banner================-->
+    <section class="banner">
+        <div class="content text-center">
+            <h2>Bienvenidos</h2>
+            <h2> a mi portfolio</h2>
+        </div>
+        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#FEF1F3" fill-opacity="1"
+                d="M0,96L40,117.3C80,139,160,181,240,192C320,203,400,181,480,165.3C560,149,640,139,720,128C800,117,880,107,960,112C1040,117,1120,139,1200,144C1280,149,1360,139,1400,133.3L1440,128L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+            </path>
+        </svg>
+    </section>
+
+
+    <!-- Default dropstart button -->
+    <div class="btn-group dropstart">
+        <button type="button" class="btn-custom  " data-bs-toggle="dropdown" aria-expanded="false"><i
+                class="fa-solid fa-bars"></i></button>
+        <ul class="dropdown-menu">
+            <!-- Dropdown menu links -->
+            <li><a href="#about_me" class="dropdown-item" type="button">Sobre mi</a></li>
+            <li><a href="#experiencia" class="dropdown-item" type="button">Experiencia</a></li>
+            <li><a href="#educacion" class="dropdown-item" type="button">Educación</a></li>
+            <li><a href="#skills" class="dropdown-item" type="button">Skills</a></li>
+            <li><a href="#proyectos" class="dropdown-item" type="button">Proyectos</a></li>
+        </ul>
+    </div>
+
+    <!--==============About me================-->
+    <section id="about_me">
+        <div class="container index about">
+            <div class="row">
+                <div class="col-md-5 text-center">
+                    <img class="foto_perfil" src="assets/IMG/mifoto.jpg" alt="">
+                    <h3>Bárbara Olguín</h3>
+                    <h6>Desarrolladora Full Stack Jr.</h6>
+                    <h6>Mendoza, Argentina</h6>
+                    <h6>barbaraolguin02@gmail.com</h6>
+                </div>
+                <div class="col-md-7 sobre_mi">
+                    <h3 class="text-center">SOBRE MI</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel ea eius voluptas eveniet obcaecati
+                        officiis nam amet voluptatibus asperiores illo, aperiam magnam veritatis autem non porro
+                        impedit,
+                        accusantium error. Corrupti.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==============Experiencia================-->
+    <section id="experiencia">
+        <div class="container index experiencia">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="text-center">EXPERIENCIA</h3>
+                    <div class="timeline">
+                        <!-- Left vertical line -->
+                        <div class="timeline__line"></div>
+                        <!-- The timeline items timeline -->
+                        <div class="timeline__items">
+
+                            <!--===== Each timeline item =====-->
+                            <div class="timeline__item">
+                                <!-- The circle and title -->
+                                <div class="timeline__top">
+                                    <!-- The circle -->
+                                    <div class="timeline__circle"></div>
+                                    <!-- The title -->
+                                    <div class="timeline__title">
+                                        <h6>2019-2022</h6>
+                                    </div>
+                                </div>
+                                <!-- The description -->
+                                <div class="timeline__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Nemo
+                                    dolores dolorum reprehenderit, alias praesentium rem consequatur illum voluptatibus
+                                    maiores eos qui nam magni! Vero, porro a veniam suscipit aperiam culpa!</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==============Educación================-->
+    <section id="educacion">
+        <div class="container index educacion">
+            <div class="row">
+                <div class="col-md-7">
+                    <h3 class="text-center">EDUCACION</h3>
+                    <div class="timeline">
+                        <!-- Left vertical line -->
+                        <div class="timeline__line"></div>
+                        <!-- The timeline items timeline -->
+                        <div class="timeline__items">
+
+                            <!--==== Each timeline item ====-->
+                            <div class="timeline__item">
+                                <!-- The circle and title -->
+                                <div class="timeline__top">
+                                    <!-- The circle -->
+                                    <div class="timeline__circle"></div>
+                                    <!-- The title -->
+                                    <div class="timeline__title">
+                                        <h4>Tec. Enología</h4>
+                                    </div>
+                                </div>
+                                <!-- The description -->
+                                <div class="timeline__desc">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                    elit. Nemo
+                                    dolores dolorum reprehenderit, alias praesentium rem consequatur illum
+                                    voluptatibus
+                                    maiores eos qui nam magni! Vero, porro a veniam suscipit aperiam culpa!</div>
+                            </div>
+
+                            <!--==== Each timeline item ====-->
+                            <div class="timeline__item">
+                                <!-- The circle and title -->
+                                <div class="timeline__top">
+                                    <!-- The circle -->
+                                    <div class="timeline__circle"></div>
+                                    <!-- The title -->
+                                    <div class="timeline__title">
+                                        <h4>EGG</h4>
+                                    </div>
+                                </div>
+                                <!-- The description -->
+                                <div class="timeline__desc">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                    elit. Nemo
+                                    dolores dolorum reprehenderit, alias praesentium rem consequatur illum
+                                    voluptatibus
+                                    maiores eos qui nam magni! Vero, porro a veniam suscipit aperiam culpa!</div>
+                            </div>
+
+                            <!--==== Each timeline item ====-->
+                            <div class="timeline__item">
+                                <!-- The circle and title -->
+                                <div class="timeline__top">
+                                    <!-- The circle -->
+                                    <div class="timeline__circle"></div>
+                                    <!-- The title -->
+                                    <div class="timeline__title">
+                                        <h4>Argentina Programa</h4>
+                                    </div>
+                                </div>
+                                <!-- The description -->
+                                <div class="timeline__desc">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                    elit. Nemo
+                                    dolores dolorum reprehenderit, alias praesentium rem consequatur illum
+                                    voluptatibus
+                                    maiores eos qui nam magni! Vero, porro a veniam suscipit aperiam culpa!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="ASSETS/IMG/certificado-argentina programa.png" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="ASSETS/IMG/certificado-egg.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--==============Hard & Soft Skills================-->
+    <section id="skills">
+        <div class="container index skills">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="text-center">HARD & SOFT SKILLS</h3>
+                    <h6 class="etiqueta_skill">HTML</h6>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-label="Example with label"
+                            style="width: 25%; background-color: #68A064;" aria-valuenow="25" aria-valuemin="0"
+                            aria-valuemax="100">25%</div>
+                    </div>
+                    <h6 class="etiqueta_skill">CSS</h6>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-label="Example with label"
+                            style="width: 15%; background-color: #68A064;" aria-valuenow="25" aria-valuemin="0"
+                            aria-valuemax="100">15%</div>
+                    </div>
+                    <h6 class="etiqueta_skill">ANGULAR</h6>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-label="Example with label"
+                            style="width: 5%; background-color: #68A064;" aria-valuenow="25" aria-valuemin="0"
+                            aria-valuemax="100">5%</div>
+                    </div>
+                    <h6 class="etiqueta_skill">BOOTSTRAP</h6>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-label="Example with label"
+                            style="width: 20%; background-color: #68A064;" aria-valuenow="25" aria-valuemin="0"
+                            aria-valuemax="100">20%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--==============Proyectos================-->
+    <section id="proyectos">
+        <div class="container index proyectos">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h3>PROYECTOS</h3>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-sm-4">
+                    <img class="w-100" src="assets/IMG/proyecto.png" alt="">
+                </div>
+                <div class="col-sm-8">
+                    <h5>Portfolio Web</h5>
+                    <p>2022-2023</p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dolor vero non quos
+                        temporibus itaque
+                        cupiditate atque, iste perferendis. Aliquam qui tenetur sed ducimus odio temporibus dolorem
+                        animi
+                        repellendus omnis.</p>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-sm-4">
+                    <img class="w-100" src="assets/IMG/proyecto.png" alt="">
+                </div>
+                <div class="col-sm-8">
+                    <h5>Portfolio Web</h5>
+                    <p>2022-2023</p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dolor vero non quos
+                        temporibus itaque
+                        cupiditate atque, iste perferendis. Aliquam qui tenetur sed ducimus odio temporibus dolorem
+                        animi
+                        repellendus omnis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="content">
+        <div class="content">
+            <h6 class="text-center">© - Todos los derechos reservados 2022</h6>
+        </div>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

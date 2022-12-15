@@ -1,0 +1,389 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d7f7d3e93f.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="assets/styles.css">
+    <title>Panel de edición</title>
+</head>
+
+<body>
+
+    <!--============== NAVBAR ================-->
+
+    <nav class=" navbar navbar-expand-lg fixed-top">
+        <!--container-fluid-->
+        <div class="container-fluid">
+            <a href="/index.html" class="navbar-brand">
+                <span class="logo d-none d-sm-inline">
+                    <img src="ASSETS/IMG/APLogo-20-20 (2).png" alt="" height="40">
+                </span>
+            </a>
+            <div class="containersocial">
+                <span class="logo d-none d-sm-inline">
+                    <!-- Button trigger modal -->
+                    <a href="/login.html"><i class="fa-solid fa-user fa-2xl"></i>
+                        </i>
+                    </a>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <!--============== Panel de edición ================-->
+
+    <div class="container dashboard text-center">
+        <div class="row">
+            <div class="col-12">
+            </div>
+        </div>
+
+        <div class="row lista">
+            <div class="col-md-4 presentacion">
+                <img class="foto_perfil dashboard" src="assets/IMG/mifoto.jpg" alt="" type="button"
+                    data-bs-toggle="modal" data-bs-target="#fotoperfilModal">
+                <div class="presentacion">
+                    <i class="fa-solid fa-pen-to-square" type="button" data-bs-toggle="modal"
+                        data-bs-target="#presentacionModal"></i>
+                    <h3>Bárbara Olguín</h3>
+                    <h6>Desarrolladora Full Stack Jr.</h6>
+                    <h6>Mendoza, Argentina</h6>
+                    <h6>barbaraolguin02@gmail.com</h6>
+                </div>
+            </div>
+
+            <div class="col-md-7 dashboard">
+                <div class="row">
+
+                    <div class="col-md">
+                        <i class="fa-solid fa-users" type="button" data-bs-toggle="modal"
+                            data-bs-target="#redesModal"></i></a>
+                        <h6>Redes</h6>
+                    </div>
+                    <div class="col-md">
+                        <i class="fa-solid fa-image" type="button" data-bs-toggle="modal"
+                            data-bs-target="#bannerModal"></i>
+                        <h6>Banner</h6>
+                    </div>
+                    <div class="col-md">
+                        <i class="fa-solid fa-align-center" type="button" data-bs-toggle="modal"
+                            data-bs-target="#infoModal"></i>
+                        <h6>Información</h6>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md"><i class="fa-solid fa-briefcase" type="button" data-bs-toggle="modal"
+                            data-bs-target="#experienciaModal"></i>
+                        <h6>Experiencia</h6>
+                    </div>
+                    <div class="col-md"><i class="fa-solid fa-graduation-cap" type="button" data-bs-toggle="modal"
+                            data-bs-target="#educacionModal"></i>
+                        <h6>Educación</h6>
+                    </div>
+                    <div class="col-md"><i class="fa-solid fa-bars-progress" type="button" data-bs-toggle="modal"
+                            data-bs-target="#skillsModal"></i>
+                        <h6>Skills</h6>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md"><i class="fa-solid fa-wrench" type="button" data-bs-toggle="modal"
+                            data-bs-target="#proyectosModal"></i>
+                        <h6>Proyectos</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal PRESENTACION -->
+    <div class="modal fade" id="presentacionModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Editar presentación</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <label class="form-label">Nombre y apellido</label>
+                    <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example">
+                    <label class="form-label">Titular</label>
+                    <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example">
+                    <label class="form-label">Ubicación</label>
+                    <input class="form-control form-control-sm" type="text" aria-label=".form-control-sm example">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal FOTO PERFIL -->
+    <div class="modal fade" id="fotoperfilModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Foto de perfil</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+
+                    <div class="mb-3">
+                        <label for="formFile" class="form-label">Actualizar foto de perfil</label>
+                        <input class="form-control" type="file" id="formFile">
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal REDES -->
+    <div class="modal fade" id="redesModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Redes</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <label for="basic-url" class="form-label">Instagram</label>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                    </div>
+                    <label for="basic-url" class="form-label">Linkedin</label>
+
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                    </div>
+
+                    <label for="basic-url" class="form-label">GitHub</label>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal BANNER -->
+    <div class="modal fade" id="bannerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Banner</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="formFile" class="form-label">Actualizar foto del banner</label>
+                        <input class="form-control" type="file" id="formFile">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal INFO -->
+    <div class="modal fade" id="infoModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Información</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <label class="form-label">Actualizar información sobre mi</label>
+
+                    <div class="input-group">
+                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal EXPERIENCIA -->
+    <div class="modal fade" id="experienciaModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Esperiencia</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi cupiditate voluptatem laboriosam
+                        consequatur facilis doloremque expedita soluta beatae ullam, neque aliquam sapiente temporibus,
+                        pariatur delectus, odit itaque necessitatibus dolores dolor.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi cupiditate voluptatem laboriosam
+                        consequatur facilis doloremque expedita soluta beatae ullam, neque aliquam sapiente temporibus,
+                        pariatur delectus, odit itaque necessitatibus dolores dolor.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi cupiditate voluptatem laboriosam
+                        consequatur facilis doloremque expedita soluta beatae ullam, neque aliquam sapiente temporibus,
+                        pariatur delectus, odit itaque necessitatibus dolores dolor.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal EDUCACIÓN -->
+    <div class="modal fade" id="educacionModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Educación</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi cupiditate voluptatem laboriosam
+                        consequatur facilis doloremque expedita soluta beatae ullam, neque aliquam sapiente temporibus,
+                        pariatur delectus, odit itaque necessitatibus dolores dolor.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi cupiditate voluptatem laboriosam
+                        consequatur facilis doloremque expedita soluta beatae ullam, neque aliquam sapiente temporibus,
+                        pariatur delectus, odit itaque necessitatibus dolores dolor.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi cupiditate voluptatem laboriosam
+                        consequatur facilis doloremque expedita soluta beatae ullam, neque aliquam sapiente temporibus,
+                        pariatur delectus, odit itaque necessitatibus dolores dolor.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal SKILLS -->
+    <div class="modal fade" id="skillsModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Skills</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <label for="customRange3" class="form-label">HTML</label>
+                    <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+
+                    <label for="customRange3" class="form-label">CSS</label>
+                    <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+
+                    <label for="customRange3" class="form-label">Angular</label>
+                    <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+
+                    <label for="customRange3" class="form-label">HTML</label>
+                    <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+
+
+                    <div class="progress-circle-container">
+                        <div class="progress-circle progress-1">
+                            <span>1</span>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-primary">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal PROYECTOS -->
+    <div class="modal fade" id="proyectosModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Proyectos</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi cupiditate voluptatem
+                        laboriosam
+                        consequatur facilis doloremque expedita soluta beatae ullam, neque aliquam sapiente
+                        temporibus,
+                        pariatur delectus, odit itaque necessitatibus dolores dolor.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <footer class="content">
+        <div class="content">
+            <h6 class="text-center">© - Todos los derechos reservados 2022</h6>
+        </div>
+    </footer>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
